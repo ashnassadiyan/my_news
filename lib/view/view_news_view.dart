@@ -61,7 +61,7 @@ class _ViewNewsView extends State<ViewNewsView> {
                           fontSize: 25,
                           color: Colors.white
                         ),),
-                            backgroundColor: Colors.green, r
+                            backgroundColor: Colors.green,
                             duration: const Duration(seconds: 2)),
                       );
                     },
