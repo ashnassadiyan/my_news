@@ -13,7 +13,7 @@ class TrendingNewsItem extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (context) => ViewNewsView(newsData: newsItem), // Pass the correct data
+            builder: (context) => ViewNewsView(newsData: newsItem),
           ),
         );
       },

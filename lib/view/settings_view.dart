@@ -87,7 +87,7 @@ class _SettingsViewState extends State<SettingsView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // App Bar Color Picker
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -100,7 +100,6 @@ class _SettingsViewState extends State<SettingsView> {
               ],
             ),
             const SizedBox(height: 40),
-            // App Mode Toggle
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -120,7 +119,6 @@ class _SettingsViewState extends State<SettingsView> {
               ],
             ),
             const SizedBox(height: 40),
-            // Country Selection Dropdown
             const Text(
               "Choose your country:",
               style: TextStyle(

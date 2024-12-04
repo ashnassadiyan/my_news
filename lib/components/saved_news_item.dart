@@ -4,7 +4,7 @@ import '../view/view_news_view.dart';
 
 class SavedNewsItem extends StatelessWidget {
   final TrendingModel newsItem;
-  final VoidCallback onDelete; // Callback for deleting news
+  final VoidCallback onDelete;
 
   const SavedNewsItem({
     Key? key,
@@ -27,7 +27,7 @@ class SavedNewsItem extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.only(bottom: 16.0),
-        child: Material( // Ensure the widget is interactive
+        child: Material(
           color: Colors.transparent,
           child: Container(
             decoration: BoxDecoration(

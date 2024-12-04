@@ -8,7 +8,7 @@ class TrendingModel {
   String? publishedAt;
   String? content;
 
-  // Constructor
+
   TrendingModel({
     this.source,
     this.author,
@@ -34,7 +34,7 @@ class TrendingModel {
     );
   }
 
-  // Method to convert an instance to JSON
+
   Map<String, dynamic> toJson() {
     return {
       'source': source?.toJson(),
@@ -56,7 +56,7 @@ class Source {
   // Constructor
   Source({this.id, this.name});
 
-  // Factory method to create an instance from JSON
+
   factory Source.fromJson(Map<String, dynamic> json) {
     return Source(
       id: json['id'],
@@ -64,7 +64,7 @@ class Source {
     );
   }
 
-  // Method to convert an instance to JSON
+
   Map<String, dynamic> toJson() {
     return {
       'id': id,

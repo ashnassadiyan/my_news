@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import '../components/custom_app_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import '../provider/trending.provider.dart';
-import '../provider/news.provider.dart'; // Ensure this import is correct
+import '../provider/news.provider.dart';
 import 'package:provider/provider.dart';
 import '../model/trending_model.dart';
 import '../view/view_news_view.dart';
-import '../components/trending_news_item.dart'; // Fixed missing semicolon
+import '../components/trending_news_item.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -64,7 +64,7 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 
-  // Build the carousel slider
+
   Widget buildTrendingCarousel(TrendingProvider trendingProvider) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,7 +101,7 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 
-  // Handle null or empty images gracefully
+
   Widget buildImage(String? image, String? title, TrendingModel data) {
     return GestureDetector(
       onTap: () {

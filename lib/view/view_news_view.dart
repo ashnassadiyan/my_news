@@ -35,8 +35,8 @@ class _ViewNewsView extends State<ViewNewsView> {
                       ? Image.network(
                     widget.newsData.urlToImage!,
                     fit: BoxFit.cover,
-                    height: 200, // Adjust image height if needed
-                    width: double.infinity, // Ensures the image spans full width
+                    height: 200,
+                    width: double.infinity,
                     errorBuilder: (context, error, stackTrace) =>
                     const Icon(
                       Icons.broken_image,

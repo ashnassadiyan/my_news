@@ -32,7 +32,7 @@ class _TrendingViewState extends State<TrendingView> {
 
   Color getOppositeColor(Color color) {
     return Color.fromARGB(
-      color.alpha, // Preserve the original alpha value
+      color.alpha,
       255 - color.red,
       255 - color.green,
       255 - color.blue,
@@ -84,7 +84,7 @@ class _TrendingViewState extends State<TrendingView> {
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       ),
                       onPressed: () {
-                        // .setCategory(_searchController.text);
+                        trendingProvider.setCategory(_searchController.text);
                       },
                       child: const Text("Search"),
                     ),
@@ -126,7 +126,7 @@ class _TrendingViewState extends State<TrendingView> {
                       onPressed: (){
                         trendingProvider.setSort("desc");
                       }, child:  Icon(
-                    Icons.arrow_downward, // Use your preferred icon
+                    Icons.arrow_downward,
                     size: 20.0,
                     color:order=='desc'? getOppositeColor(settingsProvider.appBarColor): settingsProvider.appBarColor, // Adjust color if needed
                   ))

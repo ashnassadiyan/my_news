@@ -33,7 +33,7 @@ class _NewsViewState extends State<NewsView> {
 
   Color getOppositeColor(Color color) {
     return Color.fromARGB(
-      color.alpha, // Preserve the original alpha value
+      color.alpha,
       255 - color.red,
       255 - color.green,
       255 - color.blue,
@@ -121,9 +121,9 @@ class _NewsViewState extends State<NewsView> {
                         }
 
                       }, child:  Icon(
-                    Icons.calendar_today, // Use your preferred icon
+                    Icons.calendar_today,
                     size: 20.0,
-                    color: settingsProvider.appBarColor, // Adjust color if needed
+                    color: settingsProvider.appBarColor,
                   )),
                   SizedBox(width: 3.0,),
                   ElevatedButton(
@@ -139,7 +139,7 @@ class _NewsViewState extends State<NewsView> {
                       onPressed: (){
                         newsProvider.clearDates();
                       }, child:  Icon(
-                    Icons.refresh, // Use your preferred icon
+                    Icons.refresh,
                     size: 20.0,
                     color: settingsProvider.appBarColor, // Adjust color if needed
                   )),
@@ -176,7 +176,7 @@ class _NewsViewState extends State<NewsView> {
                       onPressed: (){
                         newsProvider.setSort("desc");
                       }, child:  Icon(
-                    Icons.arrow_downward, // Use your preferred icon
+                    Icons.arrow_downward,
                     size: 20.0,
                       color:order=='desc'? getOppositeColor(settingsProvider.appBarColor): settingsProvider.appBarColor, // Adjust color if needed
                   ))
